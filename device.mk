@@ -32,6 +32,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_COMPRESSED_APEX := false
 
 # Dynamic Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
@@ -360,6 +361,7 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom_ramdisk \
+    fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
